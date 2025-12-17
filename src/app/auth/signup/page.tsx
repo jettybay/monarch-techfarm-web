@@ -11,11 +11,15 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import Footer from "@/components/Footer";
+
 
 export default function SignupPage() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-primary-50 p-4">
+    <>
+      <div className="flex items-center justify-center min-h-screen bg-primary-50 p-4">
       <Card className="w-full max-w-lg mx-auto shadow-2xl border-primary-200">
         <CardHeader className="text-center space-y-2">
 
@@ -76,9 +80,11 @@ export default function SignupPage() {
             <Link href="/auth/login" className="underline font-semibold text-primary-700">
               Sign in
             </Link>
+
           </div>
         </CardContent>
       </Card>
-    </div>
+      </div>
+    </>
   );
 }

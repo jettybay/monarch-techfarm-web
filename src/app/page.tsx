@@ -16,7 +16,9 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+
 import Navbar from "@/components/ui/navbar";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -228,6 +230,7 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* Back to Top Button */}
       {showButton && (
         <button
@@ -237,6 +240,8 @@ export default function Home() {
           <ArrowUp className="w-6 h-6" />
         </button>
       )}
+
+      <Footer />
     </>
   );
 }

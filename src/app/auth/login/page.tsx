@@ -9,13 +9,17 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import Footer from "@/components/Footer";
 
 export default function LoginPage() {
+
   return (
-    <div className="flex items-center justify-center min-h-screen bg-primary-50 p-4">
-      <Card className="w-full max-w-lg mx-auto shadow-2xl border-primary-200">
+    <>
+      <div className="flex items-center justify-center min-h-screen bg-primary-50 p-4">
+        <Card className="w-full max-w-lg mx-auto shadow-2xl border-primary-200">
         <CardHeader className="text-center space-y-2">
 
           <Link href="/" className="inline-block">
@@ -81,9 +85,11 @@ export default function LoginPage() {
             <Link href="/auth/signup" className="underline font-semibold text-primary-700">
               Create one here
             </Link>
+
           </div>
         </CardContent>
       </Card>
-    </div>
+      </div>
+    </>
   );
 }
